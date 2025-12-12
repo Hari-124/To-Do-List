@@ -1,0 +1,182 @@
+body{
+      font-family:Arial;
+    }
+
+    .heading{
+      text-align:center;
+      color:rgb(27, 37, 7);
+      font-family:Arial;
+    }
+
+    .plus-button{
+      position:fixed;
+      bottom:50px;
+      right:50px;
+      height:70px;
+      width:70px;
+      background-color:blue;
+      font-size:40px;
+      color:white;
+      border-radius:20px;
+      border:none;
+      cursor:pointer;
+    }
+
+    .empty-task{
+      height:70vh;
+      display:none;
+      justify-content:center;
+      align-items:center;
+      font-family:Arial;
+      font-size:20px;
+    }
+
+    .empty-task.show{
+      display:flex;
+    }
+
+    .to-do-task{
+      display:none;
+      flex-direction:column;
+    }
+
+    .to-do-task.show{
+      display:flex;
+    }
+
+    .tasks-shows {
+    display: grid;
+    grid-template-columns: 1fr 150px 100px;
+    gap: 12px;
+    padding: 20px;
+    }
+
+    .task-row {
+        display: contents; 
+    }
+
+    .tasks-shows span,
+    .tasks-shows button {
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        color: #222;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .tasks-shows button {
+        background: rgba(255, 80, 80, 0.4);
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
+    .tasks-shows button:hover {
+        background: rgba(255, 50, 50, 0.6);
+        transform: scale(1.05);
+    }
+
+    .tasks-shows span:hover {
+        background: rgba(255, 255, 255, 0.35);
+    }
+      
+    .task-row{
+      display:contents;
+    }
+
+    .popup{
+      display:none;
+      position:fixed;
+      top:0;
+      left:0;
+      width:100vw;
+      height:100vh;
+      background:rgba(0,0,0,0.5);
+      justify-content:center;
+      align-items:center;
+    }
+
+    .popup.show{
+      display:flex;
+    }
+
+    .add-items{
+      background:white;
+      width:400px;
+      border-radius:8px;
+      text-align:center;
+      padding:25px 25px 25px 25px;
+    }
+
+    .add-button,.close-button{
+      margin-top:15px;
+      padding:8px 16px ;
+      border:none;
+      cursor:pointer;
+      color:white;
+      border-radius:4px;
+
+    }
+
+    .add-button,
+    .close-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: Arial;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+        margin: 8px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.15);
+        transition: 0.25s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .add-button {
+        background: rgba(4, 172, 71, 0.4);
+    }
+
+    .add-button:hover {
+        background: green;
+        transform: scale(1.05);
+    }
+
+    .close-button {
+        background: rgba(132, 2, 2, 0.4);
+    }
+
+    .close-button:hover {
+        background: red;
+        transform: scale(1.05);
+    }
+
+    .task-box,
+    .date-box {
+        width: 100%;
+        max-width: 320px; 
+        padding: 12px 14px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+
+        background: rgba(255,255,255,0.25);
+        backdrop-filter: blur(8px);
+
+        font-family: Arial, sans-serif;
+        margin: 10px auto;
+        display: block;      
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    .task-box:focus,
+    .date-box:focus {
+        background: rgba(255,255,255,0.35);
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
