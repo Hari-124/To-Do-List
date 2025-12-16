@@ -66,7 +66,8 @@
         task.value="";
         saveData();
         updateTasks();
-        alert('Your Task Was ADDED!');
+        alert('Your Task Was ADDED!...., Now Click CLOSE Button Below!');
         updateHome();
 
       }
+
