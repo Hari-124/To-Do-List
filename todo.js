@@ -66,5 +66,7 @@
         task.value="";
         saveData();
         updateTasks();
+        alert('Your Task Was ADDED!');
         updateHome();
+
       }
