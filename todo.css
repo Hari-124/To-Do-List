@@ -189,4 +189,8 @@ body{
     .date-box::-webkit-calendar-picker-indicator {
         filter: invert(0);
     }
+    .add-items {
+        transform: none !important;
+    }
+
 
