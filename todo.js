@@ -60,15 +60,21 @@
       function addTask(){
         let task=document.querySelector('.task-box');
         let date=document.querySelector('.date-box');
+        let t1=task.value;
+        let t2=task.value;
+        if(t1.trim()===""|| t2.trim()===""){
+          alert('Please enter both Task and Date.');
+        }
+        else{
         todolist.push(task.value);
         tododate.push(date.value);
-        console.log(todolist,tododate);
+        updateTasks();
+        alert('Your Task Was ADDED!');
+        }
         task.value="";
         saveData();
-        updateTasks();
-        alert('Your Task Was ADDED!...., Now Click CLOSE Button!');
         updateHome();
-
       }
+
 
 
