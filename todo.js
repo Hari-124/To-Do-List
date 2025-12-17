@@ -59,6 +59,7 @@
 
       function closePopup(){
         document.getElementById("popup").classList.remove("show");
+        resetZoom();
       }
 
       function addTask(){
@@ -80,6 +81,7 @@
         saveData();
         updateHome();
       }
+
 
 
 
