@@ -10,7 +10,10 @@
       else
       toDoTask();
       }
-
+      function resetZoom(){
+         const vp=document.getElementById("viewport");
+            vp.setAttribute("content","width=device-width,initial-scale=1,maximum-scale=1");
+      }
       function emptyTask(){
         document.getElementById("to-do-task").classList.remove("show");
         document.getElementById("empty-task").classList.add("show");
@@ -33,6 +36,7 @@
           <button onclick="deleteTask(${i})">Delete</button>
           </div>`;
           hometasks += p;
+          resetZoom();
         }
         console.log(hometasks);
         document.querySelector('.tasks-shows').innerHTML=hometasks;
@@ -72,9 +76,11 @@
         alert('Your Task Was ADDED!');
         }
         task.value="";
+        resetZoom();
         saveData();
         updateHome();
       }
+
 
 
 
