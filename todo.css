@@ -10,7 +10,7 @@ body{
 
     .plus-button{
       position:fixed;
-      bottom:50px;
+      top:25px;
       right:50px;
       height:70px;
       width:70px;
@@ -192,5 +192,6 @@ body{
     .add-items {
         transform: none !important;
     }
+
 
 
