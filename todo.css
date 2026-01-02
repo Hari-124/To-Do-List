@@ -10,7 +10,7 @@ body{
 
     .plus-button{
       position:fixed;
-      top:25px;
+      bottom:50px;
       right:50px;
       height:70px;
       width:70px;
@@ -20,6 +20,7 @@ body{
       border-radius:20px;
       border:none;
       cursor:pointer;
+      z-index:1000;
     }
 
     .empty-task{
@@ -163,9 +164,9 @@ body{
         padding: 12px 14px;
         font-size: 16px;
         border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.4);
+        border: 1px solid rgba(144, 4, 4, 0.4);
 
-        background: rgba(255,255,255,0.25);
+        background: rgba(23,43,219,0.25);
         backdrop-filter: blur(8px);
 
         font-family: Arial, sans-serif;
@@ -177,7 +178,7 @@ body{
 
     .task-box:focus,
     .date-box:focus {
-        background: rgba(255,255,255,0.35);
+        background: rgba(7,159,66,0.35);
         box-shadow: 0 0 8px rgba(0,0,0,0.2);
 
     }
@@ -192,6 +193,7 @@ body{
     .add-items {
         transform: none !important;
     }
+
 
 
 
